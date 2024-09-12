@@ -59,4 +59,7 @@ degree_id, inserire un valore casuale)
     UPDATE teachers
     SET `office_number` = '126'
     WHERE `id` = 58;
+
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+    11.
+    DELETE FROM `students` WHERE `fiscal_code` = 'CGNNDR88A20E512S'; 
