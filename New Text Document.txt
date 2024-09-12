@@ -13,8 +13,8 @@
 3. Selezionare tutti gli studenti che hanno più di 30 anni
     3.
     SELECT *
-    FROM `students`  
-    WHERE DATEDIFF(CURRENT_DATE, `date_of_birth`);
+    FROM `students`
+    WHERE DATEDIFF(CURRENT_DATE, date_of_birth) / 365 > 30;
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
 laurea (286)
@@ -45,7 +45,7 @@ laurea (286)
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
     8.
-    SELECT *
+    SELECT COUNT(*) AS teachers_without_phone
     FROM `teachers`
     WHERE `phone` IS NULL;
 
