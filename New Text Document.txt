@@ -40,7 +40,8 @@ laurea (286)
     
 7. Da quanti dipartimenti è composta l'università? (12)
     7.
-e
+    SELECT COUNT (*) as num_of_dep
+    FROM `departments`
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
     8.
